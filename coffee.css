@@ -1,153 +1,126 @@
-head
-{
-	background-image: url(https://lisamulch.files.wordpress.com/2011/06/img_8930.jpg);
-}
-head img
-{
-	aligh: left;
-    margin: 0 0 10px 10px;
-    height: 200px; width: 600px;
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-image: url('http://zt-three.zoodemo.com/templates/zo2_three/assets/zo2/images/background-patterns/pattern7_white.png');
+    font-family: 'Nunito', sans-serif; 
+    color: #333;
 }
 
-body
-{
-	margin: 10;
-	padding: 5;
-	color: #333;
-	background-image: url('http://zt-three.zoodemo.com/templates/zo2_three/assets/zo2/images/background-patterns/pattern7_white.png');
-	background-color: #FF7F50;
-	font-family: 'Nunito', sans-serif; 
-	color: #00E5E6;
-	text-shadow: 1px 1px #190000;
-	font-size: 1.1em;
+header {
+    position: static;
+    background-image: url(https://lisamulch.files.wordpress.com/2011/06/img_8930.jpg);
+    background-position: bottom;
+    height: 20%;
+    min-height: 70px;
+    width: 100%;
 }
 
-header, nav, section, article 
-{
-	border: 16px;
-	margin: 5px
-	padding: 8px;
-	background-color: FFC3C3;
+header h1 {
+    padding: 50px;
+    color: #FFF;
+    text-shadow: 5px 5px #FFC3C3;
 }
 
-nav
-{
-	position: fixed;
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    max-height: 30px;
+    background-color: #FFC3C3;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 3px;
+    border-bottom-style: dotted;
+    border-bottom-color: #432300;
+    z-index: 1;
 }
 
-ol
-{
-	color:#00E5E6;
-	text-shadow: 1px 1px #190000;
+nav ul {
+    margin: 0px;
+    padding: auto;
+    border: 0px;
 }
 
-a:link { color: #333399; background-color: transparent; text-decoration: none}
-a:visited { color: #cc3366 ; background-color: transparent;text-decoration: none }
-a:focus { color: #006699 ; background-color: transparent;text-decoration: underline}
-a:hover { color: #009999; background-color: transparent;text-decoration: underline}
-a:active { color: #990000; background-color: transparent;text-decoration: underline}
-
-
-nav ul 
-{
-	margin: 0;
-	padding: 0;
-	position: relative;
+nav ul li {
+    text-decoration: none;
+    display: inline;
+    align-items: center;
 }
 
-nav ul li 
-{
-	display: inline;
-	margin: 5px;
+.left-container {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 65%;
 }
 
-aside
-{
-	position: absolute;
-	left: 600px;
-	top: 150px;
-}
-
-
-h1	
-{
-	position: static;
-	left: 10px;
-	top: 10px;
-	color: #FF4D4D;
-	text-shadow: 1px 1px #190000;
-
-}
-
-.container
-{
-	max-width: 70em;
-	margin: 0 auto;
-}
-
-.header
-{
-	color: #fff;
-	background: #999;
-	padding: 1em 1.25em;
-}
-
-.header-heading { margin: 0; }
-
-.nav-bar
-{
-	background: #000;
-	padding: 0;
-	align: center;
-}
-
-.content
-{
-	overflow: hidden;
-	padding: 1em 1.25em;
-	background-color: #fff;
-}
-
-.main, .aside
-{
-	margin-bottom: 1em;
-}
-
-.footer
-{
-	color: #fff;
-	background: #000;
-	padding: 1em 1.25em;
-   height:25%;
-   padding:20px;
-   padding-top:0px;
-   clear: both;
-}
-
-footer{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-image: url(http://berriesandbees.com/wp-content/uploads/2013/03/green-coffee-for-weight-loss.jpg);
-  z-index: 3;
-  padding: 12px 0;
-  border-top: 1px solid black;
-  font-size: 32px;
-  color: #AAD4FF;
-  text-shadow: 1px 1px #190000;
-  }
-
- footer img 
-{
+.right-container {
+    display: inline;
     float: right;
-    margin: 0 0 10px 10px;
+    position: absolute;
+    width: 35%;
 }
 
-img
-{
-    aligh: left;
-    margin: 0 0 10px 10px;
-    height: 100px; width: 150px;
+section {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    background-color: #AAD4FF;
+    border-radius: 8px;
 }
 
+.todo, .benefits, .culture {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
 
+aside {
+    display: block;
+    padding: 10px;
+}
+
+footer {
+    clear: both;
+    position: static;
+    min-height: 60px;
+    background-color: #190000;
+}
+
+footer p {
+    padding: 20px;
+    text-transform: lowercase;
+    color: #FFF;
+}
+
+/*Default imgs, text and colors*/
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+}
+
+figure {
+    margin: auto;
+}
+
+figure img {
+    display: inline-grid;
+    height: 100px;
+    width: 150px;
+    border-radius: 0px;
+}
+
+h2, h3, h4, h5, h6 {
+    text-transform: capitalize;
+    text-shadow: 1px 1px #190000;
+    text-align: center;
+}
+
+a {color: #432300; text-decoration: none}
+a:link { color: #333399; text-decoration: none}
+a:visited { color: #cc3366; text-decoration: none }
+a:focus { color: #006699; text-decoration: underline}
+a:hover { color: #009999; text-decoration: underline}
+a:active { color: #990000; text-decoration: underline}
